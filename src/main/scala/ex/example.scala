@@ -8,7 +8,7 @@ import scala.io.Source
   */
 object example {
   def main(args: Array[String]): Unit = {
-    read(Array("build.sbt"))
+    println ( ChecksumAccumulator.calculate("Welcome to Scala Chinese community"))
   }
 
   def array(): Unit ={
