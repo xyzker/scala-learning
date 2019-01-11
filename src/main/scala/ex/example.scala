@@ -8,7 +8,7 @@ import scala.io.Source
   */
 object example {
   def main(args: Array[String]): Unit = {
-    println ( ChecksumAccumulator.calculate("Welcome to Scala Chinese community"))
+    val oneHalf=new Rational(1,2)
   }
 
   def array(): Unit ={
