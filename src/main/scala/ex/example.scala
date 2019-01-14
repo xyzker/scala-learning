@@ -10,7 +10,8 @@ import scala.io.Source
   */
 object example {
   def main(args: Array[String]): Unit = {
-    for(i println("Interation " + i)
+    val ae=new ArrayElement(Array("hello","world"))
+    print(ae.contents)
   }
 
   def array(): Unit ={
