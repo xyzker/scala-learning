@@ -1,5 +1,7 @@
 package ex
 
+import java.io.File
+
 import scala.io.Source
 
 /**
@@ -8,7 +10,7 @@ import scala.io.Source
   */
 object example {
   def main(args: Array[String]): Unit = {
-    val oneHalf=new Rational(1,2)
+    for(i println("Interation " + i)
   }
 
   def array(): Unit ={
@@ -63,4 +65,20 @@ object example {
     else
       Console.err.println("Please enter filename")
   }
+
+  def gcdLoop (x: Long, y:Long) : Long ={
+    var a=x
+    var b=y
+    while( a!=0) {
+      var temp=a
+      a=b % a
+      b = temp
+    }
+    b
+  }
+
+  def scalaFiles(files:Array[File]) =
+    for {
+      file <- files  if file.getName.endsWith(".scala")
+    } yield file
 }
