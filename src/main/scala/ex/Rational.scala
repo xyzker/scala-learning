@@ -4,7 +4,7 @@ package ex
   * @author: kexi
   * @date: 2019/1/11
   */
-class Rational(n: Int, d: Int) {
+class Rational(n: Int, d: Int) extends Ordered[Rational]{
   require(d!=0)
   private val g =gcd (n.abs,d.abs)
   val numer =n/g
@@ -23,4 +23,5 @@ class Rational(n: Int, d: Int) {
   private def gcd(a:Int,b:Int):Int =
     if(b==0) a else gcd(b, a % b)
   implicit def intToRational(x:Int) = new Rational(x)
+  override def compare (that:Rational)= (this.numer*that.denom)-(that.numer*that.denom)
 }
